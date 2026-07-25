@@ -1,0 +1,244 @@
+
+
+nav{
+    display: flex;
+    align-items: center; /* Alinea verticalmente todo */
+    padding: 1rem 2rem;
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    font-weight: 700;
+    color: rgb(255, 187, 1);
+    background-color: rgb(189, 0, 0);
+    border-radius: 30px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.nlogo{
+    height: 75px; /* Ajusta este valor según la altura de tu barra */
+    width: auto;  /* Mantiene la proporción */
+}
+
+.espacio{
+    color:  rgb(189, 0, 0);;
+}
+
+body{
+    background-color: #353535;
+
+}
+
+
+a {
+    color: #ff8800; 
+    text-decoration: none; 
+}
+
+
+a:hover {
+    color: #FFD700; 
+    cursor: pointer;
+}
+
+/* Esto centra el contenedor que tiene al botón */
+.Boton {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px; /* Espacio desde la barra */
+    
+} 
+
+.Boton a {
+    background-color: #d90429;
+    color: rgb(255, 166, 0);
+    padding: 20px 40px;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-decoration: none;
+    border-radius: 30px;
+    box-shadow: 0 8px 0 #9e0321;
+    transition: all 0.1s ease;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+    width: 80%;
+    max-width: 400px;
+}
+
+/* Efecto al pasar el mouse */
+.Boton a:hover {
+    background-color: #ef233c;
+}
+
+/* Efecto al hacer clic */
+.Boton a:active {
+    transform: translateY(4px);
+    box-shadow: 0 4px 0 #9e0321;
+}
+
+body {
+    background: linear-gradient(135deg, #121212 0%, #3a0b12 50%, #2b220c 100%);
+    background-attachment: fixed; /* Hace que el fondo se quede fijo al deslizar la página */
+    margin: 0;
+    padding: 0;
+}
+
+.logo-flotante {
+    position: fixed;   /* Lo fija en la pantalla para que no se mueva al hacer scroll */
+    top: 87%;         /* Distancia desde arriba */
+    right: 87%;        /* Distancia desde la izquierda (si lo quieres a la derecha, cambia 'left' por 'right: 15px;') */
+    z-index: 1000;     /* Asegura que el logo siempre esté por encima de todo lo demás */
+}
+
+/* Controla el tamaño de la imagen del logo para que no sea gigante */
+.logo-flotante img {
+    width: 150%;       /* Ajusta este tamaño según lo grande o pequeño que lo quieras */
+    height: auto;
+    border-radius: 50%; /* Opcional: si quieres que el logo sea redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Una pequeña sombrita para que destaque */
+}
+
+body {
+    /* 1. Le dice al navegador qué imagen usar */
+    background-image: url('fondo.jpeg');
+
+    /* 2. Cubre toda la pantalla sin importar el tamaño (no se ve cortada) */
+    background-size: cover;
+
+    /* 3. Centra la imagen perfectamente */
+    background-position: center center;
+
+    /* 4. Evita que la imagen se repita como mosaico */
+    background-repeat: no-repeat;
+
+    /* 5. La imagen se queda fija al hacer scroll (efecto profesional) */
+    background-attachment: fixed;
+
+    /* 6. Un color de fondo oscuro por si la imagen tarda en cargar */
+    background-color: #121212;
+}
+
+body {
+    /* Quitamos el background-image directo aquí */
+    margin: 0;
+    height: 100%;
+    /* Usamos una capa oscura DEBAJO de la imagen */
+    background-color: #000; 
+}
+
+/* Usamos el pseudo-elemento ::before para crear la capa oscura */
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+    /* Aquí ponemos la imagen de fondo */
+    background-image: url('fondo.jpeg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    
+    /* ESTO ES LA CLAVE: Una capa negra semitransparente sobre la foto */
+    /* rgba(0,0,0, 0.6) significa negro con 60% de opacidad */
+    background-blend-mode: overlay; 
+    background-color: rgba(0, 0, 0, 0.6); 
+
+    /* Asegura que la capa esté detrás de todo el contenido */
+    z-index: -1;
+}
+
+
+p {
+    display: flex;
+    flex-direction: column; /* Hace que el texto baje en orden */
+    align-items: center;    /* Centra el bloque horizontalmente */
+    text-align: center;     /* Centra el texto por dentro */
+    margin-left: auto;      /* Clave para centrar un elemento con ancho definido */
+    margin-right: auto;     /* Clave para centrar un elemento con ancho definido */
+    width: 80%;
+    height: 100%;
+    background-color: #d90429;
+    color: rgb(255, 166, 0);
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(0,0,0,0.4);
+    font-family: 'Poppins', sans-serif;
+    font-size: 200%;
+    font-weight: 400;
+    background: linear-gradient(to top, #3f0000, #d30000);
+}
+
+.perros{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.perros img{
+    width: 15%;
+    height: auto;
+}
+
+.menu-item{
+     background: linear-gradient(to top, #3f0000, #d30000);
+}
+
+
+.desgranados{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.desgranados img{
+    width: 15%;
+    height: auto;
+}
+
+
+.asados{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.asados img{
+    width: 20%;
+    height: auto;
+}
+
+.hamburguesas{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.hamburguesas img{
+    width: 20%;
+    height: auto;
+}
+
+
+.salchipapas{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.salchipapas img{
+    width: 20%;
+    height: auto;
+}
+
+.bebidas{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.bebidas img{
+    width: 20%;
+    height: auto;
+}
+
+
+.adicion{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.adicion img{
+    width: 20%;
+    height: auto;
+}
+
+
