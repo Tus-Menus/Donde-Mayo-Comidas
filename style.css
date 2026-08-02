@@ -1,5 +1,6 @@
 
 
+
 nav{
     display: flex;
     align-items: center; /* Alinea verticalmente todo */
@@ -175,7 +176,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .perros img{
-    width: 15%;
+    width: 50%;
     height: auto;
 }
 
@@ -189,7 +190,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .desgranados img{
-    width: 15%;
+    width: 50%;
     height: auto;
 }
 
@@ -199,7 +200,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .asados img{
-    width: 20%;
+    width: 50%;
     height: auto;
 }
 
@@ -208,7 +209,16 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .hamburguesas img{
-    width: 20%;
+    width: 50%;
+    height: auto;
+}
+
+.Picadas{
+    background-color: #000;
+    background: linear-gradient(to top, #3f0000, #000000);
+}
+.Picadas img{
+    width: 50%;
     height: auto;
 }
 
@@ -218,7 +228,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .salchipapas img{
-    width: 20%;
+    width: 50%;
     height: auto;
 }
 
@@ -227,7 +237,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .bebidas img{
-    width: 20%;
+    width: 50%;
     height: auto;
 }
 
@@ -237,7 +247,7 @@ p {
     background: linear-gradient(to top, #3f0000, #000000);
 }
 .adicion img{
-    width: 20%;
+    width: 50%;
     height: auto;
 }
 
